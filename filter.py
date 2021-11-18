@@ -48,7 +48,7 @@ class ImageProcessor:
 @click.option("-i", default="input.jpg", help="Input filename.")
 @click.option("-o", default="output.jpg", help="Output filename.")
 @click.option("--size", default=10, help="Size of mosaic.")
-@click.option("--level", default=5, help="Number of colors")
+@click.option("--level", default=50, help="Number of colors")
 def main(i, o, size, level):
     img = Image.open(i)
     image = np.array(img)
