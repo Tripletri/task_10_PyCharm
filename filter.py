@@ -29,8 +29,7 @@ class ImageProcessor:
         :param start_y: Верхний край блока
         :return: Средний цвет блока пикселей
         """
-        average_color_sum = self.data[start_x:start_x + self.size,
-                            start_y:start_y + self.size].sum() / 3
+        average_color_sum = self.data[start_x:start_x + self.size, start_y:start_y + self.size].sum() / 3
         average_color = int(average_color_sum // self.size ** 2)
         return average_color
 
@@ -42,8 +41,7 @@ class ImageProcessor:
         :param start_x: Левый край блока
         :param start_y: Верхний край блока
         """
-        self.data[start_x:start_x + self.size,
-        start_y:start_y + self.size] = int(color // self.step) * self.step
+        self.data[start_x:start_x + self.size, start_y:start_y + self.size] = int(color // self.step) * self.step
 
     @staticmethod
     def validate_size(size):
