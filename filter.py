@@ -45,7 +45,7 @@ class ImageProcessor:
 
 
 @click.command()
-@click.option("-i", default="input.png", help="Input filename.")
+@click.option("-i", default="input.jpg", help="Input filename.")
 @click.option("-o", default="output.jpg", help="Output filename.")
 @click.option("--size", default=10, help="Size of mosaic.")
 @click.option("--level", default=5, help="Number of colors")
